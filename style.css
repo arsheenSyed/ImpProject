@@ -110,3 +110,56 @@ transition: all .3s ease;
     color: white;
 }
 /* -------------------------- Team Ends ------------------------ */
+
+/* -------------------------- Project --------------------------- */
+ #project {
+    background-color: #444;
+    color: #fff;
+}
+
+ .card-container {
+    position: relative;
+    perspective: 200rem;
+    height: 412px;
+    width: 18rem;
+}
+
+ .card-container:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+ .card-container:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/*
+.projects .container .main-row .card {
+    cursor: pointer;
+}
+
+.projects .container .main-row .card img {
+    transform: translateY(-50px);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.projects .container .card .card-body {
+    visibility: hidden;
+    transform: translateY(-150px);
+    height: 0px;
+}
+
+.projects .container .card:hover .card-body {
+    visibility: visible;
+    transform: translateY(-50px);
+    transition: ease .5s;
+    height: 50px;
+} */
+
+/* --------------------------- Project end ------------------------ */
+
+
