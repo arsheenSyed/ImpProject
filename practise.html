@@ -39,7 +39,79 @@
     /* ---------------------------- Animation cards ------------------------ */
 
     /* ------------------------------ FLip cards ----------------------------- */
-     
+     section#team-area {
+         background-color: #262626;
+
+     }
+
+     #team-area {
+         padding: 60px 0;
+     }
+
+     .section-heading {
+         text-align: center;
+         color: #fff;
+         margin-bottom: 50px;
+         text-transform: uppercase;
+         font-size: 65px;
+         letter-spacing: 5px;
+     }
+
+     .card {
+         border:none;
+         background: #fff;
+     }
+
+
+     .img-area {
+         display: block;
+     }
+
+     .team-single:hover .side-two {
+         transform: rotateY(0deg);
+     }
+
+     .team-single:hover .side-one {
+         transform: rotateY(180deg);
+     }
+
+
+     .content-area {
+         transform: perspective(1000px);
+         transition: 1s;
+         transform-style: preserve-3d;   
+         position: relative; 
+     }
+
+     .side-one {
+         position: relative;
+         transform: rotateY(0deg);
+         z-index: 2;
+         margin-bottom: 30px;
+     }
+
+
+     .side-two {
+         position:absolute;
+         top:0;
+         left: 0;
+         background: #fff;
+         transform: rotateY(-180deg);
+
+     }
+
+   
+     .side-one,
+     .side-two {
+         backface-visibility: hidden;
+         transition: 1s;
+         transform-style: preserve-3d;
+     }
+
+      .side-one .card,
+      .side-two .card {
+          height: 312px;
+      }
 
     /* ------------------------------ Flip cards ENd --------------------------- */
  
@@ -152,6 +224,146 @@
     </div>
 </div>
 <!-- flip cards -->
+
+<!-- projects -->
+<section id="team-area">
+    <div class="container">
+        <h3 class="section-heading">Team Members</h3>
+        <div class="row">
+
+            <!-- card -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="team-single">
+                    <div class="content-area">
+                        <div class="side-one">
+                            <div class="card">
+                                <div class="card-one text-center">
+                                    <div class="img-area">
+                                        <img src="whatwedo.jpg" alt="" class="card-img-top">
+                                    </div>
+                                    <h3>Arsheen Syeda</h3>
+                                    <p>Front-End-Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side-two">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4>Arsheen Syeda</h4>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit temporibus optio, fugiat vero facilis soluta mollitia explicabo non nam?</p>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank"><i class="fa fa-youtube"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="#" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         <!-- one card -->
+
+         <!-- card -->
+         <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="team-single">
+                <div class="content-area">
+                    <div class="side-one">
+                        <div class="card">
+                            <div class="card-one text-center">
+                                <div class="img-area">
+                                    <img src="whatwedo.jpg" alt="" class="card-img-top">
+                                </div>
+                                <h3>Arsheen Syeda</h3>
+                                <p>Front-End-Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-two">
+                    <div class="card">
+                        <div class="card-body text-center mt-4">
+                            <h4>Arsheen Syeda</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit temporibus optio, fugiat vero facilis soluta mollitia explicabo non nam?</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- card two -->
+
+         <!-- card -->
+         <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="team-single">
+                <div class="content-area">
+                    <div class="side-one">
+                        <div class="card">
+                            <div class="card-one text-center">
+                                <div class="img-area">
+                                    <img src="whatwedo.jpg" alt="" class="card-img-top">
+                                </div>
+                                <h3>Arsheen Syeda</h3>
+                                <p>Front-End-Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-two">
+                    <div class="card">
+                        <div class="card-body text-center mt-4">
+                            <h4>Arsheen Syeda</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla suscipit temporibus optio, fugiat vero facilis soluta mollitia explicabo non nam?</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-youtube"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- card three -->
+
+        </div>
+    </div>
+</section>
+<!-- projects -->
 <!-- Rules -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

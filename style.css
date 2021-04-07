@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 * {
     padding: 0;
     padding: 0;
@@ -5,7 +6,10 @@
 }
 
 body {
-    font-family: 'Balsamiq Sans', cursive;
+    /* font-family: 'Balsamiq Sans', cursive; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 /* ------------- Navigation ---------------------- */
@@ -16,13 +20,57 @@ body {
 .navbar-custom {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    background-color: #0b1c62;
 }
 
+.navbar-custom .navbar-brand .logo {
+    /* font-weight: bold; */
+    /* letter-spacing: 2px; */
+       letter-spacing: 1px;
+       font-weight: bold;
+}
+
+.navbar-custom ul.navbar-nav li.nav-item a.nav-link {
+    font-weight: 500;
+}
 /* ------------------------- Navigation ENd ------------- */
+/* ------------------ Naviation 2------------------------- */
+.navbar-2 .fa{
+padding: 10px;
+font-size: 10px;
+width: 30px;
+text-align: center;
+text-decoration: none;
+border-radius: 50%;
+}
+
+.navbar-2 .fa:hover {
+    opacity: 0.7;
+}
+
+.navbar-2 .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.navbar-2 .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.navbar-2 .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+
+
+/* --------------------- Navigation-2 ----------------------- */
 /* ------------------------ Hero ------------------------ */
 header {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('hero.jpg');
-    color: #fff;
+    /* background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)), url('hero.jpg'); */
+   background-image:linear-gradient(rgba(0, 141, 196, 0.9), rgba(0, 141, 196, 0.5)), url('banner2.jpg');
+   color: #fff;
    height: 70vh;
    background-size: cover;
    background-position: center;
@@ -39,7 +87,13 @@ header {
 }
 
 .banner-text p {
+    font-size: 18px;
     color: #fff;
+}
+
+.banner-text #intro {
+    font-size: 25px;
+
 }
 
 .banner-btn a {
@@ -54,87 +108,203 @@ header {
     color: #fff;
 }
 
+
+
 .banner-btn a.active {
-   background: #Df0010;
-   border-color: #Df0010;
-   color: rgba(256, 256, 256, 0.6); 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 4px;
+   /* background: #E63219;
+   border-color: #E63219; */
+   /* background: #d2555c; */
+   background: #ac504d;
+   border-color: #ac504d;
+   color: #fff; 
 }
 
 /* ------------------------- Hero End --------------------- */
+/* ----------------------- About Me ------------------------- */
+
+.about h2 {
+    color: #974b49;
+
+    /* color: #fa4453; */
+letter-spacing: 3px;
+font-weight: 500;
+
+text-decoration: #3b557d;
+}
+
+.about h2 span {
+color: #3b557d;
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 15px;
+    /* color: #411322; */
+    color: #182333;
+}
+
+.about p span {
+    color: #182333;
+}
+/* ------------------------ ABout Me ------------------------- */
 /* ------------------------ Team Section -------------------- */
-section#team {
-    background: #444;
+
+/* section.team {
+    background-color: #333;
+}
+
+section.team .img-area {
+    display: inline;
+    overflow: hidden;
+} */
+
+section.project-area {
+    background-image: linear-gradient(rgba(159, 39, 45, 0.8), rgba(156, 39, 45, 0.8)), url("projectBackground.jpg");
+    background-size: cover;
+
+    /* background: #a66563; */
+      /* background: rgba(20, 37, 104, 0.8); */
+      /* background: rgb(47, 63, 104,0.9); */
+}
+
+
+section.project-area h1 , section.project-area p {
     color: #fff;
+    /* font-weight: bolder; */
 }
 
-section#team .card {
-    color: #444;
-    font-weight: 400;
-  font-size: 14px;
-
+section.project-area .card {
+    background-color: #fff;
+    
 }
 
-section#team h3 {
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
+section.project-area .card h5.card-text{
+   /* color: #466697; */
+   /* color:  #125688; */
+   /* color: #9f4643; */
+   /* color: #323d68; */
+   color: #974b49;
+
+   font-weight: 500;
+    /* color: #3b557d; */
+    /* color:#3b557d; */
+    letter-spacing: 1px;
 }
 
-section#team img {
-    margin-top: -50px;
+section.project-area .card h5.card-text span {
+  /* color:rgb(0, 141, 196); */
+  color: #323d68;
 }
 
-#team i {
-    font-size: 26px;
-    color: #555;
+
+
+section.project-area .card img {
+    height: auto;
 }
 
-#team p {
-    font-weight: 500;
-}
 
-#team .card {
-border-radius: 0;
-box-shadow: 2px 2px 5px red;
-transition: all .3s ease;
--webkit-transition: all .3s ease;
--moz-transition: all .3s ease-in;
-}
 
-#team .card:hover {
-    background: red;
-    color: #fff;
-}
-
-#team .card:hover i {
-    color: white;
-}
 /* -------------------------- Team Ends ------------------------ */
 
-/* -------------------------- Project --------------------------- */
- #project {
-    background-color: #444;
+/* -------------------------- Team --------------------------- */
+section#team {
+    /* background: #420d09; */
+    background: #F0EE97;
+    
+}
+
+section#team{
     color: #fff;
 }
 
- .card-container {
+.card {
+    border: none;
+    background: #fff;
     position: relative;
-    perspective: 200rem;
-    height: 412px;
-    width: 18rem;
+
 }
 
- .card-container:hover .card-front {
-    transform: rotateY(180deg);
+.card h4, .card p {
+    color: #333;
 }
 
- .card-container:hover .card-back {
+.img-area{
+   
+    display: inline-block;
+    overflow: hidden;
+    /* border-radius: 50%; */
+}
+
+.project-single:hover .side-two {
     transform: rotateY(0deg);
+    border-radius: 5px;
 }
 
-.card-back {
+.project-single:hover .side-one {
     transform: rotateY(180deg);
 }
+
+.content-area { 
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+.side-one {
+  position: relative;
+  transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+
+}
+
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: rotateY(-180deg);
+}
+
+
+
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+   
+}
+
+
+.side-one .card,
+.side-two .card {
+height: 310px;
+}
+
+ h4 {
+     color: brown;
+     
+     letter-spacing: 5px;
+     font-size: 25px;
+ }
+
+.list-inline-item a {
+    color: brown;
+}
+
+p {
+   font-family: cursive;
+}
+
+
+ 
 
 /*
 .projects .container .main-row .card {
@@ -160,6 +330,12 @@ transition: all .3s ease;
     height: 50px;
 } */
 
-/* --------------------------- Project end ------------------------ */
+/* --------------------------- Team Ends ------------------------ */
 
 
+/*-------------------------- Award -------------------------- */
+
+
+
+
+----------------------Award ------------------------
